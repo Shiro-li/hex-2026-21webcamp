@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <link rel="stylesheet" href="all.css">
+
     <title>Blogs</title>
 </head>
 
 <body>
-    <div>
-        <div>
+    <div class="blog-post df jcsb">
+        <div class="blog-post-list fw700">
             <ul>
-                <li><a href="#">全部</a></li>
+                <li class="active-list"><a href="#">全部</a></li>
                 <li><a href="#">品牌設計</a></li>
                 <li><a href="#">平面設計</a></li>
                 <li><a href="#">UIUX 設計</a></li>
@@ -23,17 +30,117 @@
                 <li><a href="#">AI 趨勢應用</a></li>
             </ul>
         </div>
-        <div>
-            <div><img src="img/blog_1.png" alt="文章封面"></div>
-            <div>
-                <p>UIUX 設計・網頁設計・前端技術</p>
-                <h2>網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率</h2>
-                <div>
-                    <span>Oct 16, 2022</span> <span>110 views</span> <span>2 shares</span>
+        <div class="blog-post-content ">
+            <div class="blog-content-card df mb24">
+                <div class="blog-post-content-img">
+                    <img src="img/blog_1.png" alt="文章封面">
+                </div>
+                <div class="blog-post-content-text">
+                    <p class="mb12">UIUX 設計・網頁設計・前端技術</p>
+                    <h2 class="fw700 mb12">網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率</h2>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <span>Oct 16, 2022</span>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-content-card df mb24">
+                <div class="blog-post-content-img">
+                    <img src="img/blog_2.png" alt="文章封面">
+                </div>
+                <div class="blog-post-content-text">
+                    <p class="mb12">UIUX 設計·設計規範·前端技術</p>
+                    <h2 class="fw700 mb12">10年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h2>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <span>Oct 16, 2022</span>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-content-card df mb24">
+                <div class="blog-post-content-img">
+                    <img src="img/blog_3.png" alt="文章封面">
+                </div>
+                <div class="blog-post-content-text">
+                    <p class="mb12">品牌設計·平面設計·UIUX 設計</p>
+                    <h2 class="fw700 mb12">從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</h2>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <span>Oct 16, 2022</span>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-content-card df mb24">
+                <div class="blog-post-content-img">
+                    <img src="img/blog_4.png" alt="文章封面">
+                </div>
+                <div class="blog-post-content-text">
+                    <p class="mb12">UIUX 設計·前端技術·AI 趨勢應用</p>
+                    <h2 class="fw700 mb12">當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力</h2>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <span>Oct 16, 2022</span>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="blog-content-card df mb24">
+                <div class="blog-post-content-img">
+                    <img src="img/blog_5.png" alt="文章封面">
+                </div>
+                <div class="blog-post-content-text">
+                    <p class="mb12">前端技術·後端架構·AI 趨勢應用</p>
+                    <h2 class="fw700 mb12">揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</h2>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <span>Oct 16, 2022</span>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
                 </div>
             </div>
 
+
         </div>
+
+
     </div>
 </body>
 

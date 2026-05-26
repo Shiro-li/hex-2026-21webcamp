@@ -1,0 +1,232 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* my css */
+body,
+a {
+    color: #404040;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.mr12{
+    margin-right: 12px;
+}
+.df {
+    display: flex;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.blog-post {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.blog-post-list {
+    max-width: 180px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.blog-post-list a {
+    text-align: center;
+    padding: 12px 24px;
+    display: block;
+    text-decoration: none;
+}
+
+.active-list a {
+    background-color: #24140B;
+    color: #fff;
+
+}
+
+.blog-post-content {
+    max-width: 1076px;
+
+}
+
+.blog-post-content-text {
+    padding: 57px 0px 57px 24px;
+}
+
+.blog-post-content-text h2 {
+    font-size: 24px;
+}
+
+.blog-card-info {
+    font-size: 14px;
+}
+
+.blog-card-info .material-symbols-outlined {
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.blog-post-content-img {
+    max-width: 526px;
+
+}
+
+.blog-post-content-img img {
+    width: auto;
+    max-height: 256px;
+    display: block;
+
+
+}
