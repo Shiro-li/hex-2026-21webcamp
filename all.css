@@ -164,6 +164,9 @@ img {
 .fz28{
     font-size: 28px;
 }
+.fz24{
+    font-size: 24px;
+}
 .mb12 {
     margin-bottom: 12px;
 }
@@ -176,6 +179,10 @@ img {
     margin-bottom: 40px;
 }
 
+.mb60{
+    margin-bottom: 60px;
+}
+
 .mr12 {
     margin-right: 12px;
 }
@@ -185,6 +192,12 @@ img {
 }
 .p24{
     padding: 24px;
+}
+.p28{
+    padding: 28px;
+}
+.p40{
+    padding: 40px;
 }
 
 .df {
@@ -196,6 +209,19 @@ img {
 }
 .alc{
     align-items: center;
+}
+.fdc{
+    flex-direction: column;
+}
+/* 按鈕 */
+.btn-black{
+    border-radius: 999px;
+    text-decoration: none;
+    padding: 12px 24px;
+    color:#fff;
+    display: block;
+    background-color: #404040;
+    font-weight: 500;
 }
 /* 導覽列 */
 
@@ -209,6 +235,9 @@ img {
 }
 .index-image>img{
     display: block;
+}
+.index-btn-group{
+    gap: 24px;
 }
 /* 首頁-service */
 .service{
@@ -235,8 +264,19 @@ img {
     background-color: #404040;
 }
 
+/* projects */
+.projects-card{
+    background-color: #fff;
+    width: 33%;
+    text-align: center;
+}
+.content-bg1{
+background-image: url(./img/project_1.png);
+}
+
+
 /* 部落格 */
-.blog-post, .index, .nvbar ,.service-container{
+.projects, .blog-post, .index, .nvbar ,.service-container{
     max-width: 1296px;
     margin: 0 auto;
 }
