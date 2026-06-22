@@ -152,21 +152,25 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* 自訂區 */
 .fw700 {
     font-weight: 700;
 }
 
-.fz80{
+.fz80 {
     font-size: 80px;
     line-height: 120%;
 }
-.fz28{
+
+.fz28 {
     font-size: 28px;
 }
-.fz24{
+
+.fz24 {
     font-size: 24px;
 }
+
 .mb12 {
     margin-bottom: 12px;
 }
@@ -175,11 +179,11 @@ img {
     margin-bottom: 24px;
 }
 
-.mb40{
+.mb40 {
     margin-bottom: 40px;
 }
 
-.mb60{
+.mb60 {
     margin-bottom: 60px;
 }
 
@@ -187,16 +191,19 @@ img {
     margin-right: 12px;
 }
 
-.ptb80{
+.ptb80 {
     padding: 80px 0px;
 }
-.p24{
+
+.p24 {
     padding: 24px;
 }
-.p28{
+
+.p28 {
     padding: 28px;
 }
-.p40{
+
+.p40 {
     padding: 40px;
 }
 
@@ -207,76 +214,107 @@ img {
 .jcsb {
     justify-content: space-between;
 }
-.alc{
+
+.jcc {
+    justify-content: center;
+}
+
+.alc {
     align-items: center;
 }
-.fdc{
+
+.fdc {
     flex-direction: column;
 }
+
 /* 按鈕 */
-.btn-black{
+.btn-black {
     border-radius: 999px;
     text-decoration: none;
     padding: 12px 24px;
-    color:#fff;
+    color: #fff;
     display: block;
     background-color: #404040;
     font-weight: 500;
 }
+
 /* 導覽列 */
 
 /* 首頁 */
-.index-content{
+.index-content {
     width: 40%;
     flex-direction: column;
 }
-.index-image{
+
+.index-image {
     width: 60%;
 }
-.index-image>img{
+
+.index-image>img {
     display: block;
 }
-.index-btn-group{
+
+.index-btn-group {
     gap: 24px;
 }
+
 /* 首頁-service */
-.service{
+.service {
     background-color: #24140B;
-        color: #fff;
+    color: #fff;
 }
-.service-list{
+
+.service-list {
     gap: 24px;
 }
-.service-card{
+
+.service-card {
     background-color: #fff;
     width: 25%;
-    color:#404040;
+    color: #404040;
 }
-.service-card-body > a{
+
+.service-card-body>a {
     border-radius: 50%;
     text-decoration: none;
     font-size: 24px;
     padding: 12px;
-    color:#fff;
-    width:48px;
+    color: #fff;
+    width: 48px;
     height: 48px;
     display: block;
     background-color: #404040;
 }
 
 /* projects */
-.projects-card{
+.projects-card {
     background-color: #fff;
     width: 33%;
     text-align: center;
 }
-.content-bg1{
-background-image: url(./img/project_1.png);
+
+.content-bg1 {
+    background-image: url(./img/project_1.png);
+    object-fit: cover;
+}
+
+.content-bg2 {
+    background-image: url(./img/project_2.png);
+    object-fit: cover;
+}
+
+.content-bg3 {
+    background-image: url(./img/project_3.png);
+    object-fit: cover;
 }
 
 
 /* 部落格 */
-.projects, .blog-post, .index, .nvbar ,.service-container{
+.projects,
+.blog-post,
+.index,
+.nvbar,
+.service-container {
     max-width: 1296px;
     margin: 0 auto;
 }
