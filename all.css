@@ -88,6 +88,36 @@ video {
     vertical-align: baseline;
 }
 
+/* 清除文字輸入框、多行文字框、按鈕的原始樣式 */
+input[type="text"],
+textarea,
+button {
+    -webkit-appearance: none;
+    /* 移除 Safari / Chrome 的內建行動裝置樣式 */
+    -moz-appearance: none;
+    /* 移除 Firefox 的內建樣式 */
+    appearance: none;
+    /* 標準的外觀清除屬性 */
+
+    background: transparent;
+    /* 移除預設背景色（如按鈕的灰色） */
+    border: none;
+    /* 移除預設邊框 */
+    outline: none;
+    /* 移除點擊時的預設外框線 */
+    padding: 0;
+    /* 移除內建內距 */
+    margin: 0;
+    /* 移除內建外距 */
+
+    font-family: inherit;
+    /* 繼承父元素的字體 */
+    font-size: inherit;
+    /* 繼承父元素的字體大小 */
+    color: inherit;
+    /* 繼承父元素的文字顏色 */
+}
+
 /* box sizing */
 *,
 *::before,
@@ -207,7 +237,11 @@ img {
     padding: 40px;
 }
 
-.gap24{
+.gap12 {
+    gap: 12px;
+}
+
+.gap24 {
     gap: 24px;
 }
 
@@ -237,6 +271,7 @@ img {
 }
 
 /* container */
+.subscription,
 .blogs,
 .projects,
 .blog-post,
@@ -327,10 +362,48 @@ img {
     background-image: url(./img/project_3.png);
     object-fit: cover;
 }
+
 /* 首頁 - blogs */
-.index-blogs-card{
+.index-blogs-card {
     width: 33%;
     gap: 12px;
+}
+
+/* 首頁 SUBSCRIPTION */
+.subscription-bg {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, .3),
+            rgba(0, 0, 0, .7)), url(./img/subscription_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    color: #fff;
+
+}
+
+.subscription-info {
+    padding: 80px 40px;
+    max-width: 59%;
+}
+
+.subscription-form {
+    border: solid #fff 1px;
+    padding: 12px 24px;
+    border-radius: 40px;
+}
+
+/* 表單系列 */
+.form-white {
+    background: none;
+    color: #fff;
+}
+
+input[type="text"]::placeholder {
+    color: #fff;
+    /* 將提示文字改為淺灰色 */
+    opacity: 1;
+    /* 確保 Firefox 瀏覽器下顏色不會變淡 */
 }
 
 /* 部落格 */
