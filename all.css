@@ -207,6 +207,10 @@ img {
     padding: 40px;
 }
 
+.gap24{
+    gap: 24px;
+}
+
 .df {
     display: flex;
 }
@@ -225,6 +229,22 @@ img {
 
 .fdc {
     flex-direction: column;
+}
+
+.img-block {
+    display: block;
+    object-fit: cover;
+}
+
+/* container */
+.blogs,
+.projects,
+.blog-post,
+.index,
+.nvbar,
+.service-container {
+    max-width: 1296px;
+    margin: 0 auto;
 }
 
 /* 按鈕 */
@@ -286,7 +306,7 @@ img {
     background-color: #404040;
 }
 
-/* projects */
+/* 首頁 - projects */
 .projects-card {
     background-color: #fff;
     width: 33%;
@@ -307,18 +327,13 @@ img {
     background-image: url(./img/project_3.png);
     object-fit: cover;
 }
-
-
-/* 部落格 */
-.projects,
-.blog-post,
-.index,
-.nvbar,
-.service-container {
-    max-width: 1296px;
-    margin: 0 auto;
+/* 首頁 - blogs */
+.index-blogs-card{
+    width: 33%;
+    gap: 12px;
 }
 
+/* 部落格 */
 .blog-post-list {
     max-width: 180px;
     font-weight: bold;
