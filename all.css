@@ -164,6 +164,10 @@ img {
     line-height: 120%;
 }
 
+.fz48 {
+    font-size: 48px;
+}
+
 .fz28 {
     font-size: 28px;
 }
@@ -212,6 +216,9 @@ img {
     gap: 12px;
 }
 
+.gap16{
+    gap: 16px;
+}
 .gap24 {
     gap: 24px;
 }
@@ -236,6 +243,10 @@ img {
     flex-direction: column;
 }
 
+.alse {
+    align-self: flex-end;
+}
+
 .img-block {
     display: block;
     object-fit: cover;
@@ -250,6 +261,11 @@ img {
 .index,
 .nvbar,
 .service-container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.container {
     max-width: 1296px;
     margin: 0 auto;
 }
@@ -276,7 +292,50 @@ img {
     font-weight: 500;
 }
 
+/* 表單系列 */
+.forms-style {
+    border: solid #fff 1px;
+    padding: 12px 24px;
+    border-radius: 40px;
+    width: 100%;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+    outline: none;
+}
+
+input,
+textarea {
+    color: #fff;
+    background: none;
+    border: 0px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, .8);
+
+}
+
+
 /* 導覽列 */
+.nvbar {
+    padding: 12px 0px;
+}
+
+.nvbar-list>li {
+    display: flex;
+    align-items: center;
+}
+
+.nvbar-list a {
+    text-decoration: none;
+    display: block;
+    padding: 4px 12px;
+}
 
 /* 首頁 */
 .index-content {
@@ -377,35 +436,7 @@ img {
 }
 
 
-/* 表單系列 */
-.forms-style {
-    border: solid #fff 1px;
-    padding: 12px 24px;
-    border-radius: 40px;
-        width: 100%;
-}
 
-
-
-input,
-textarea,
-button {
-    font: inherit;
-    outline: none;
-}
-
-input,
-textarea {
-    color: #fff;
-    background: none;
-    border: 0px;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: rgba(255, 255, 255, .8);
-
-}
 
 /* footer - contact */
 .contact-bg {
@@ -418,7 +449,20 @@ textarea::placeholder {
     width: 58%;
 }
 
-/* 部落格 */
+/* blogs 部落格 */
+/* blog header */
+.blog-header-bg {
+    background-image: url(./img/blog_banner.png);
+    background-size: cover;
+}
+
+.blog-header {
+    padding: 109px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+/* blog list */
 .blog-post-list {
     max-width: 180px;
     font-weight: bold;
@@ -469,4 +513,21 @@ textarea::placeholder {
 .blog-post-content-img img {
     display: block;
     object-fit: cover;
+}
+
+/* blog-listpages */
+.listpages{
+    align-self: flex-end;
+    padding-bottom: 80px;
+}
+.listpages a{
+padding: 8px 15px;
+display: block;
+text-decoration: none;
+border-radius: 1000px;
+}
+
+.listpages-black{
+    background-color: #404040;
+    color: #fff;
 }
