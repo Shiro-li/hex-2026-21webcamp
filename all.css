@@ -216,15 +216,28 @@ img {
     gap: 12px;
 }
 
-.gap16{
+.gap16 {
     gap: 16px;
 }
+
+.gap20 {
+    gap: 20px;
+}
+
 .gap24 {
     gap: 24px;
 }
 
+.gap40 {
+    gap: 40px;
+}
+
 .df {
     display: flex;
+}
+
+.db {
+    display: block;
 }
 
 .jcsb {
@@ -267,6 +280,11 @@ img {
 
 .container {
     max-width: 1296px;
+    margin: 0 auto;
+}
+
+.service-container {
+    max-width: 1076px;
     margin: 0 auto;
 }
 
@@ -320,6 +338,34 @@ textarea::placeholder {
 
 }
 
+/* tiltes */
+.blog-header-bg {
+    background-image: url(./img/blog_banner.png);
+    background-size: cover;
+}
+
+.project-header-bg {
+    background-image: url(./img/project_banner.png);
+    background-size: cover;
+}
+
+.service-header-bg {
+    background-image: url(./img/service_banner.png);
+    background-size: cover;
+}
+
+.header-title {
+    padding: 109px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.service-header-title {
+    text-align: center;
+    color: #fff;
+}
+
+
 
 /* 導覽列 */
 .nvbar {
@@ -371,7 +417,9 @@ textarea::placeholder {
     color: #404040;
 }
 
-.service-card-body>a {
+/* 箭頭按鈕 */
+.service-card-body>a,
+.service-container a {
     border-radius: 50%;
     text-decoration: none;
     font-size: 24px;
@@ -436,8 +484,6 @@ textarea::placeholder {
 }
 
 
-
-
 /* footer - contact */
 .contact-bg {
     color: #fff;
@@ -450,17 +496,6 @@ textarea::placeholder {
 }
 
 /* blogs 部落格 */
-/* blog header */
-.blog-header-bg {
-    background-image: url(./img/blog_banner.png);
-    background-size: cover;
-}
-
-.blog-header {
-    padding: 109px 0px;
-    text-align: center;
-    color: #fff;
-}
 
 /* blog list */
 .blog-post-list {
@@ -516,18 +551,235 @@ textarea::placeholder {
 }
 
 /* blog-listpages */
-.listpages{
+.listpages {
     align-self: flex-end;
     padding-bottom: 80px;
 }
-.listpages a{
-padding: 8px 15px;
-display: block;
-text-decoration: none;
-border-radius: 1000px;
+
+.listpages a {
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+    border-radius: 1000px;
 }
 
-.listpages-black{
+.listpages-black {
     background-color: #404040;
     color: #fff;
+}
+
+/* projects */
+.content-bg4 {
+    background-image: url(./img/project_4.png);
+    object-fit: cover;
+}
+
+.project-menu {
+    width: 100%;
+}
+
+
+.project-menu li {
+    text-align: center;
+    width: 20%;
+
+}
+
+.project-menu a {
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+}
+
+
+
+/* service */
+.service-menu {
+    max-width: 1076px;
+    text-align: center;
+
+    color: #404040;
+}
+
+.service-menu>li {
+    width: 25%;
+    background-color: #fff;
+    padding: 32px 60px;
+}
+
+.service-menu>li.menu-black {
+    background-color: #24140B;
+    color: #fff;
+}
+
+.service-step-bg {
+    background-color: #24140B;
+    color: #fff;
+}
+
+.service-content {
+    max-width: 636px;
+}
+
+.service-content li {
+    border-left: 1px solid #fff;
+    position: relative;
+    padding: 0px 0px 40px 44px;
+
+}
+
+.service-content li:last-child {
+    border-left: none;
+}
+
+.service-icon {
+    background-color: #fff;
+    color: #404040;
+    position: absolute;
+    padding: 12px 20px;
+    border-radius: 50%;
+    top: -6px;
+    left: -24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* service 手風琴區域 */
+
+.faq-bg {
+  background: #FDF7F1;
+}
+
+.faq {
+  color: #404040;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 80px 0;
+}
+
+.faq-title h2 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.faq-container {
+  width: 60%;
+}
+
+.faq-item {
+  border-bottom: 1px solid #24140B;
+  padding: 24px;
+}
+
+.faq-header {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+/* 箭頭樣式與旋轉動畫 */
+.faq-arrow {
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg); /* 預設箭頭朝下 */
+  transition: transform 0.3s ease; /* 旋轉動畫 */
+  margin-left: auto;
+}
+
+/* 利用 max-height 變化實現滑動效果 */
+.faq-body {
+  max-height: 0; /* 預設高度為 0，隱藏內容 */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* 展開時的滑動動畫 */
+}
+
+.faq-content {
+  font-weight: 500;
+  padding-left: 34px;
+  padding-top: 16px;
+}
+
+/* 1. 展開內容區塊 */
+.faq-item.faqactive .faq-body {
+  max-height: 300px;
+}
+
+/* 2. 讓箭頭旋轉 180 度變成朝上 */
+.faq-item.faqactive .faq-arrow {
+  transform: rotate(-135deg); 
+}
+
+/* select menu */
+
+.menu-black {
+    background-color: #24140B;
+    color: #fff;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    /* padding: 60px 20px; */
+    border-radius: 8px;
+    max-width: 1076px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+#closeModalBtn {
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.closeModalBtn {
+    justify-content: flex-end;
+    padding: 12px 24px;
+}
+
+
+.active {
+    display: flex;
+}
+
+/* modal內文樣式 */
+.model-content-bg {
+    background-color: #FDF7F1;
+    text-align: center;
+}
+
+.model-content-info-r {
+    padding-right: 24px;
+    width: 66%;
+}
+
+.model-content-info-l {
+    padding: 10px 0;
+}
+
+.model-content-info-l>p {
+    padding-left: 24px;
+    border-left: 1px solid #737373;
 }
