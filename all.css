@@ -775,7 +775,6 @@ hr {
     margin-bottom: 24px;
 }
 
-
 /* articale table 樣式 */
 .article-table {
     /* border: 1px solid #737373; */
@@ -808,7 +807,10 @@ hr {
     background-color: #FDF7F1;
 }
 
-
+/* article related blog */
+.related-blog-bg{
+    background-color: #FDF7F1;
+}
 
 /* select menu */
 
