@@ -156,6 +156,27 @@ img {
     height: auto;
 }
 
+input,
+textarea,
+button {
+    outline: none;
+    font: inherit;
+    border: none;
+    background: transparent;
+}
+
+input,
+textarea {
+    color: #fff;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, .8);
+
+}
+
 /* 自訂區 */
 .fw700 {
     font-weight: 700;
@@ -334,35 +355,20 @@ img {
     padding: 12px 24px;
     border-radius: 40px;
     width: 100%;
-}
-
-.forms-style input {
     height: 64px;
+    display: flex;
+    justify-content: center;
 }
 
-.forms-style textarea {
+.forms-style-textarea {
     height: 120px;
 }
 
-input,
-textarea,
-button {
-    outline: none;
-    font: inherit;
+button.forms-style {
+    background-color: #fff;
+    height: 50px;
 }
 
-input,
-textarea {
-    color: #fff;
-    background: transparent;
-    border: none;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: rgba(255, 255, 255, .8);
-
-}
 
 /* tiltes */
 .blog-header-bg {
