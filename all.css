@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* css reset */
 html,
 body,
@@ -224,6 +226,10 @@ img {
     padding: 40px;
 }
 
+.gap8 {
+    gap: 8pxs;
+}
+
 .gap12 {
     gap: 12px;
 }
@@ -330,18 +336,26 @@ img {
     width: 100%;
 }
 
+.forms-style input {
+    height: 64px;
+}
+
+.forms-style textarea {
+    height: 120px;
+}
+
 input,
 textarea,
 button {
-    font: inherit;
     outline: none;
+    font: inherit;
 }
 
 input,
 textarea {
     color: #fff;
-    background: none;
-    border: 0px;
+    background: transparent;
+    border: none;
 }
 
 input::placeholder,
@@ -502,10 +516,42 @@ textarea::placeholder {
     background-color: #24140B;
 }
 
-.contact-form {
-    padding: 0px 40px;
-    width: 58%;
+.contact-content {
+    max-width: 526px;
 }
+
+.contact-form {
+    padding: 0 48px;
+    width: 60%;
+}
+
+.contact a,
+.contact span {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.contact li {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact ul {
+    padding-top: 60px;
+}
+
+.contact textarea,
+.contact input {
+    width: 100%;
+    height: auto;
+    font: inherit;
+}
+
 
 /* blogs 部落格 */
 
@@ -808,9 +854,10 @@ hr {
 }
 
 /* article related blog */
-.related-blog-bg{
+.related-blog-bg {
     background-color: #FDF7F1;
 }
+
 
 /* select menu */
 

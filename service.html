@@ -3,9 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
     <link rel="stylesheet" href="all.css">
 
@@ -32,24 +31,32 @@
             </div>
             <ul class="service-menu df jcsb gap24">
                 <li class="menu-black">
-                    <p>X</p>
+                    <p><span class="material-symbols-outlined">
+                                format_color_fill
+                            </span></p>
                     <p class="fw700">GRAPHIC</p>
                     <h3 class="fw700 fz28">平面設計</h3>
                 </li>
                 <li class="">
-                    <p>X</p>
-                    <p class="fw700">GRAPHIC</p>
-                    <h3 class="fw700 fz28">平面設計</h3>
+                    <p><span class="material-symbols-outlined">
+                                desktop_windows
+                            </span></p>
+                    <p class="fw700">WEBSITE</p>
+                    <h3 class="fw700 fz28">網頁設計</h3>
                 </li>
                 <li class="">
-                    <p>X</p>
-                    <p class="fw700">GRAPHIC</p>
-                    <h3 class="fw700 fz28">平面設計</h3>
+                    <p><span class="material-symbols-outlined">
+                                web
+                            </span></p>
+                    <p class="fw700">FRONTEND</p>
+                    <h3 class="fw700 fz28">前端切版</h3>
                 </li>
                 <li class="">
-                    <p>X</p>
-                    <p class="fw700">GRAPHIC</p>
-                    <h3 class="fw700 fz28">平面設計</h3>
+                    <p><span class="material-symbols-outlined">
+                                data_table
+                            </span></p>
+                    <p class="fw700">BACKEND</p>
+                    <h3 class="fw700 fz28">後端開發</h3>
                 </li>
             </ul>
         </div>
@@ -105,7 +112,9 @@
                 <h3 class="fz24 fw700">品牌視覺與電商整合，多肉植物品牌電商建置</h3>
                 <div class="df jcsb gap20">
                     <p>從品牌識別設計到 RWD 響應式網站開發，打造療癒系植栽購物體驗</p>
-                    <div><a href="#" class="icon-filled-btn">↗</a></div>
+                    <div><a href="#" class="icon-filled-btn"><span class="material-symbols-outlined">
+                                arrow_outward
+                            </span></a></div>
                 </div>
             </article>
             <article class="df fdc gap12">
@@ -121,7 +130,9 @@
                 <h3 class="fz24 fw700">數位產品 UI/UX 設計，個人化財務視覺化軟體</h3>
                 <div class="df jcsb gap20">
                     <p>運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的個人化操作介面</p>
-                    <div><a href="#" class="icon-filled-btn">↗</a></div>
+                    <div><a href="#" class="icon-filled-btn"><span class="material-symbols-outlined">
+                                arrow_outward
+                            </span></a></div>
                 </div>
             </article>
         </div>
@@ -190,8 +201,8 @@
     </section>
 
     <footer class="contact-bg ptb80">
-        <div class="contact df jcsb">
-            <div class="df fdc jcsb">
+        <div class="contact df jcsb gap24">
+            <div class="df fdc jcsb gap24 contact-content">
                 <div class="df fdc gap24">
                     <header>
                         <p class="fw700">與我聯絡</p>
@@ -202,11 +213,29 @@
                 </div>
                 <div class="df fdc gap24">
                     <ul class="df gap12">
-                        <li>x</li>
-                        <li>x</li>
-                        <li>x</li>
+                        <li><a href="#">
+                                <span class="material-symbols-outlined">
+                                    photo_camera
+                                </span>
+                            </a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                                    mark_unread_chat_alt
+                                </span></a></li>
+                        <li><a href="#">
+                                <span class="material-symbols-outlined">
+                                    person_apron
+                                </span>
+                            </a></li>
                     </ul>
-                    <p><span>X </span><a href="mailto:service@hexschool.com">service@hexschool.com</a></p>
+                    <div class="df gap8 ">
+
+                        <span class="material-symbols-outlined">
+                            drafts
+                        </span>
+                        <p>
+                            <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="contact-form">
@@ -223,7 +252,7 @@
                         <div class="forms-style">
                             <input type="email" placeholder="電子信箱">
                         </div>
-                        <div class="forms-style">
+                        <div class="forms-style forms-style-textarea">
                             <textarea name="" id="" placeholder="備註"></textarea>
                         </div>
                         <button type="submit" class="forms-style">送出</button>

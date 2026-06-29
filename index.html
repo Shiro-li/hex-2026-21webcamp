@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
     <link rel="stylesheet" href="all.css">
 
@@ -60,12 +59,16 @@
                             <p class="service-card-en">GRAPHIC</p>
                             <h3 class="mb12 fz28">平面設計</h3>
                         </div>
-                        <div class="service-card-icon">x</div>
+                        <div class="service-card-icon"><span class="material-symbols-outlined">
+                                format_color_fill
+                            </span></div>
                     </div>
 
-                    <div class="service-card-body df jcsb">
+                    <div class="service-card-body df jcsb alc">
                         <p class="mr12">從品牌識別到視覺傳達，用專業設計精準傳遞核心價值</p>
-                        <a href="#" class="icon-filled-btn">↗</a>
+                        <a href="#" class="icon-filled-btn"><span class="material-symbols-outlined">
+                                arrow_outward
+                            </span></a>
                     </div>
                 </li>
                 <li class="service-card p24">
@@ -74,12 +77,16 @@
                             <p class="service-card-en">WEBSITE</p>
                             <h3 class="mb12 fz28">網頁設計</h3>
                         </div>
-                        <div class="service-card-icon">x</div>
+                        <div class="service-card-icon"><span class="material-symbols-outlined">
+                                desktop_windows
+                            </span></div>
                     </div>
 
-                    <div class="service-card-body df jcsb">
+                    <div class="service-card-body df jcsb alc">
                         <p class="mr12">美感易用並重，以 Figma 打造符合直覺的數位體驗</p>
-                        <a href="#" class="icon-filled-btn">↗</a>
+                        <a href="#" class="icon-filled-btn"><span class="material-symbols-outlined">
+                                arrow_outward
+                            </span></a>
                     </div>
                 </li>
                 <li class="service-card p24">
@@ -88,12 +95,16 @@
                             <p class="service-card-en">FRONTEND</p>
                             <h3 class="mb12 fz28">前端切版</h3>
                         </div>
-                        <div class="service-card-icon">x</div>
+                        <div class="service-card-icon"><span class="material-symbols-outlined">
+                                web
+                            </span></div>
                     </div>
 
-                    <div class="service-card-body df jcsb">
+                    <div class="service-card-body df jcsb alc">
                         <p class="mr12">精準轉譯設計稿細節，建構流暢穩定 RWD 響應式網頁</p>
-                        <a href="#" class="icon-filled-btn">↗</a>
+                        <a href="#" class="icon-filled-btn"><span class="material-symbols-outlined">
+                                arrow_outward
+                            </span></a>
                     </div>
                 </li>
                 <li class="service-card p24">
@@ -102,12 +113,16 @@
                             <p class="service-card-en">BACKEND</p>
                             <h3 class="mb12 fz28">後端開發</h3>
                         </div>
-                        <div class="service-card-icon">x</div>
+                        <div class="service-card-icon"><span class="material-symbols-outlined">
+                                data_table
+                            </span></div>
                     </div>
 
-                    <div class="service-card-body df jcsb">
+                    <div class="service-card-body df jcsb alc">
                         <p class="mr12">佈署穩定系統架構，串接 API 並確保數據處理安全</p>
-                        <a href="#" class="icon-filled-btn">↗</a>
+                        <a href="#" class="icon-filled-btn"><span class="material-symbols-outlined">
+                                arrow_outward
+                            </span></a>
                     </div>
                 </li>
             </ul>
@@ -249,8 +264,8 @@
         </div>
     </section>
     <footer class="contact-bg ptb80">
-        <div class="contact df jcsb">
-            <div class="df fdc jcsb">
+        <div class="contact df jcsb gap24">
+            <div class="df fdc jcsb gap24 contact-content">
                 <div class="df fdc gap24">
                     <header>
                         <p class="fw700">與我聯絡</p>
@@ -261,11 +276,29 @@
                 </div>
                 <div class="df fdc gap24">
                     <ul class="df gap12">
-                        <li>x</li>
-                        <li>x</li>
-                        <li>x</li>
+                        <li><a href="#">
+                                <span class="material-symbols-outlined">
+                                    photo_camera
+                                </span>
+                            </a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                                    mark_unread_chat_alt
+                                </span></a></li>
+                        <li><a href="#">
+                                <span class="material-symbols-outlined">
+                                    person_apron
+                                </span>
+                            </a></li>
                     </ul>
-                    <p><span>X </span><a href="mailto:service@hexschool.com">service@hexschool.com</a></p>
+                    <div class="df gap8 ">
+
+                        <span class="material-symbols-outlined">
+                            drafts
+                        </span>
+                        <p>
+                            <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="contact-form">
@@ -282,7 +315,7 @@
                         <div class="forms-style">
                             <input type="email" placeholder="電子信箱">
                         </div>
-                        <div class="forms-style">
+                        <div class="forms-style forms-style-textarea">
                             <textarea name="" id="" placeholder="備註"></textarea>
                         </div>
                         <button type="submit" class="forms-style">送出</button>
