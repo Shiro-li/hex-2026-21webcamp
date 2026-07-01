@@ -279,6 +279,10 @@ textarea::placeholder {
     display: block;
 }
 
+.fw {
+    flex-wrap: wrap;
+}
+
 .jcsb {
     justify-content: space-between;
 }
@@ -305,25 +309,8 @@ textarea::placeholder {
 }
 
 /* container */
-.contact,
-.subscription,
-.blogs,
-.projects,
-.blog-post,
-.index,
-.nvbar,
-.service-container {
-    max-width: 1296px;
-    margin: 0 auto;
-}
-
 .container {
     max-width: 1296px;
-    margin: 0 auto;
-}
-
-.service-container {
-    max-width: 1076px;
     margin: 0 auto;
 }
 
@@ -357,7 +344,15 @@ textarea::placeholder {
     width: 100%;
     height: 64px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.forms-button-style {
+    background-color: #fff;
+    border: solid #fff 1px;
+    padding: 12px 24px;
+    border-radius: 40px;
 }
 
 .forms-style-textarea {
@@ -402,11 +397,18 @@ button.forms-style {
 /* 導覽列 */
 .nvbar {
     padding: 12px 0px;
+    background-color: #FDF7F1;
+}
+
+.nvbar-m-menu,
+.nvbar-m-close {
+    display: none;
 }
 
 .nvbar-list>li {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nvbar-list a {
@@ -487,7 +489,7 @@ button.forms-style {
 
 /* 首頁 - blogs */
 .index-blogs-card {
-    width: 33%;
+    /* width: 33%; */
     gap: 12px;
 }
 
@@ -509,12 +511,6 @@ button.forms-style {
     max-width: 59%;
 }
 
-.subscription-btn {
-    border: solid #fff 1px;
-    padding: 12px 24px;
-    border-radius: 40px;
-}
-
 
 /* footer - contact */
 .contact-bg {
@@ -522,13 +518,23 @@ button.forms-style {
     background-color: #24140B;
 }
 
-.contact-content {
+/* .contact-content {
     max-width: 526px;
-}
+} */
 
 .contact-form {
-    padding: 0 48px;
-    width: 60%;
+    padding: 0px 48px;
+    /* width: 60%; */
+}
+
+.contact-text {
+    width: 25%;
+}
+
+.contact {
+    flex-direction: column;
+    max-height: 544px;
+    /* gap:70px */
 }
 
 .contact a,
@@ -554,7 +560,7 @@ button.forms-style {
 .contact textarea,
 .contact input {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     font: inherit;
 }
 
@@ -934,3 +940,247 @@ hr {
     padding-left: 24px;
     border-left: 1px solid #737373;
 }
+
+/* -------------------- RWD -------------------- */
+@media (max-width: 375px) {
+    p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    a {
+        /* padding: 4px 12px; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .gap24 {
+        gap: 12px;
+    }
+
+    .fz24 {
+        font-size: 20px;
+    }
+
+    .fz28 {
+        font-size: 24px;
+    }
+
+    .fz80 {
+        font-size: 40px;
+    }
+
+    .p40 {
+        padding: 24px
+    }
+
+    .ptb80 {
+        padding: 40px 0px;
+    }
+
+    .mb40 {
+        margin-bottom: 24px;
+    }
+
+    .mb60 {
+        margin-bottom: 32px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    /* forms 表單樣式 */
+    .forms-style {
+        padding: 8px;
+    }
+
+    .forms-style>input,
+    textarea {
+        padding: 8px;
+    }
+}
+
+/* -------------------- Index -------------------- */
+@media (max-width: 375px) {
+    .index {
+        flex-direction: column-reverse;
+        gap: 24px;
+
+    }
+
+    .index-content {
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .index-image {
+        width: 100%;
+
+    }
+
+    /* index - service */
+    .service-list {
+        overflow-x: auto;
+    }
+
+    .service-card {
+        width: 260px;
+        flex-shrink: 0;
+    }
+
+    /* index - project */
+
+    .projects-card {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .content-bg1,
+    .content-bg2,
+    .content-bg3 {
+        padding-top: 280px;
+        background-size: cover;
+    }
+
+    .content-bg1 {
+        background-image: url(./img/mobile/project_1.png);
+    }
+
+    .content-bg2 {
+        background-image: url(./img/mobile/project_2.png);
+    }
+
+    .content-bg3 {
+        background-image: url(./img/mobile/project_3.png);
+    }
+
+    /* index - blogs */
+
+    .index-blog-list {
+        overflow-x: auto;
+
+    }
+
+    .index-blogs-card {
+        flex-shrink: 0;
+        width: 260px;
+
+    }
+
+    /* index - subscription */
+    .subscription {
+        flex-direction: column;
+    }
+
+    .subscription-bg {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, .3),
+                rgba(0, 0, 0, .7)), url(./img/mobile/subscription_bg.png);
+    }
+
+    .subscription-info {
+        padding-top: 28px;
+        max-width: 100%;
+    }
+}
+
+/* -------------------- Navbar -------------------- */
+@media (max-width: 375px) {
+
+    .nvbar,
+    .nvbar-list {
+        flex-direction: column;
+        max-width: 100%;
+
+    }
+
+    .nvbar-m-menu {
+        display: flex;
+    }
+
+    .nvactive {
+        display: flex;
+    }
+
+    .remove {
+        display: none;
+    }
+
+    .nvbar-list {
+        font-size: 14px;
+        align-items: center;
+        display: none;
+        justify-content: center;
+        padding-top: 12px;
+    }
+
+    .bar-bg {
+        width: 100%;
+        display: none;
+        position: fixed;
+        inset: 0;
+        /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        justify-content: center;
+        align-items: flex-start;
+        overflow-y: auto;
+
+    }
+
+    .nvbar-list li {
+        padding: 0px;
+    }
+
+    .nvbar-list.nvactive {
+        display: flex;
+    }
+}
+
+/* -------------------- Footer -------------------- */
+/* contact */
+@media (max-width: 375px) {
+
+    .contact {
+        max-height: none;
+        height: auto;
+        gap: 24px;
+    }
+
+    .contact-text {
+        order: 1;
+        width: 100%;
+    }
+
+    .contact-form {
+        order: 2;
+        padding: 0px;
+    }
+
+    .contact-social {
+        order: 3;
+    }
+
+    .contact ul {
+        padding-top: 0px;
+    }
+
+    .form-name-phone {
+        flex-direction: column;
+    }
+}
+
+
+/* -------------------- Article -------------------- */
+
+/* -------------------- Blogs -------------------- */
+
+/* -------------------- Project -------------------- */
+
+/* -------------------- Service -------------------- */

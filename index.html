@@ -16,9 +16,23 @@
 
 <body>
     <header>
-        <nav class="df jcsb nvbar fw700">
-            <div><a href="index.html"><img src="img/device-pc.svg" alt=""></a></div>
-            <ul class="df nvbar-list gap24">
+        <nav class="df jcsb nvbar fw700 container">
+            <div class="df jcsb alc">
+                <div>
+                    <a href="index.html"><img src="img/device-pc.svg" alt=""></a>
+                </div>
+                <button class="nvbar-m-menu">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <button class="nvbar-m-close">
+                    <span class="material-symbols-outlined">
+                        close   
+                    </span>
+                </button>
+            </div>
+            <ul class="df nvbar-list gap24 jcsb fw">
                 <li><a href="service.html">服務項目</a></li>
                 <li><a href="project.html">專案作品</a></li>
                 <li><a href="blogs.html">部落格</a></li>
@@ -26,7 +40,7 @@
             </ul>
         </nav>
     </header>
-    <section class="index df alc jcsb">
+    <section class="container index df alc jcsb">
 
         <div class="index-content">
 
@@ -49,7 +63,7 @@
 
     </section>
     <section class="service ptb80">
-        <div class="service-container">
+        <div class="container">
             <p class="section-subtitle fw700">服務項目</p>
             <h2 class="fw700 fz80 mb40">SERVICES</h2>
             <ul class="service-list df">
@@ -129,7 +143,7 @@
         </div>
 
     </section>
-    <section class="projects ptb80">
+    <section class="projects ptb80 container">
         <div class="df alc fdc mb40">
             <h3 class="fw700">專案作品</h3>
             <h2 class="fz80 fw700">PROJECTS</h2>
@@ -179,78 +193,74 @@
             <div class="df alc jcc"><a href="#" class="btn-black">探索更多</a></div>
         </div>
     </section>
-    <section class="blogs ptb80">
-        <header class="df jcsb alc mb40">
-            <div>
-                <p class="fw700">部落格</p>
-                <h2 class="fz80 fw700">BLOGS</h2>
+    <section class="ptb80">
+        <div class="container">
+            <header class="df jcsb alc mb40">
+                <div>
+                    <p class="fw700">部落格</p>
+                    <h2 class="fz80 fw700">BLOGS</h2>
+                </div>
+                <a href="#" class="btn-white">探索更多</a>
+            </header>
+            <div class="df jcsb gap24 index-blog-list">
+                <article class="index-blogs-card df fdc">
+                    <div><img src="./img/blog_2.png" alt="" class="img-block"></div>
+                    <p class="">UIUX 設計·設計規範·前端技術</p>
+                    <h3 class="fz24 fw700 ">10年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h3>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <time datetime="2022-10-16">Oct 16, 2022</time>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
+                </article>
+                <article class="index-blogs-card df fdc">
+                    <div><img src="./img/blog_3.png" alt="" class="img-block"></div>
+                    <p class="">品牌設計·平面設計·UIUX 設計</p>
+                    <h3 class="fz24 fw700 ">從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</h3>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <time datetime="2022-10-16">Oct 16, 2022</time>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
+                </article>
+                <article class="index-blogs-card df fdc">
+                    <div><img src="./img/blog_5.png" alt="" class="img-block"></div>
+                    <p class="">前端技術·後端架構·AI 趨勢應用</p>
+                    <h3 class="fz24 fw700 ">揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</h3>
+                    <div class="blog-card-info df jcsb">
+                        <p>
+                            <time datetime="2022-10-16">Oct 16, 2022</time>
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
+                                share
+                            </span><span> 2 shares</span>
+                        </p>
+                    </div>
+                </article>
             </div>
-            <a href="#" class="btn-white">探索更多</a>
-        </header>
-        <div class="df jcsb gap24">
-            <article class="index-blogs-card df fdc">
-                <div><img src="./img/blog_2.png" alt="" class="img-block"></div>
-                <p class="">UIUX 設計·設計規範·前端技術</p>
-                <h3 class="fz24 fw700 ">10年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h3>
-
-                <div class="blog-card-info df jcsb">
-                    <p>
-                        <time datetime="2022-10-16">Oct 16, 2022</time>
-                    </p>
-                    <p>
-                        <span class="material-symbols-outlined">
-                            visibility
-                        </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
-                            share
-                        </span><span> 2 shares</span>
-                    </p>
-                </div>
-
-            </article>
-            <article class="index-blogs-card df fdc">
-                <div><img src="./img/blog_3.png" alt="" class="img-block"></div>
-                <p class="">品牌設計·平面設計·UIUX 設計</p>
-                <h3 class="fz24 fw700 ">從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</h3>
-
-                <div class="blog-card-info df jcsb">
-                    <p>
-                        <time datetime="2022-10-16">Oct 16, 2022</time>
-                    </p>
-                    <p>
-                        <span class="material-symbols-outlined">
-                            visibility
-                        </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
-                            share
-                        </span><span> 2 shares</span>
-                    </p>
-                </div>
-
-            </article>
-            <article class="index-blogs-card df fdc">
-                <div><img src="./img/blog_5.png" alt="" class="img-block"></div>
-                <p class="">前端技術·後端架構·AI 趨勢應用</p>
-                <h3 class="fz24 fw700 ">揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</h3>
-
-                <div class="blog-card-info df jcsb">
-                    <p>
-                        <time datetime="2022-10-16">Oct 16, 2022</time>
-                    </p>
-                    <p>
-                        <span class="material-symbols-outlined">
-                            visibility
-                        </span><span class="mr12"> 110 views</span> <span class="material-symbols-outlined">
-                            share
-                        </span><span> 2 shares</span>
-                    </p>
-                </div>
-
-            </article>
         </div>
     </section>
     <section class="subscription-bg">
-        <div class="subscription df gap24">
-            <div><img src="./img/subscription.png" alt="" class="img-block"></div>
-            <div class="subscription-info df fdc gap24">
+        <div class="container df gap24 subscription">
+            <img src="./img/subscription.png" alt="" class="img-block">
+            <div class="subscription-info df fdc gap24 ptb80">
                 <header>
                     <p class="fw700">電子報訂閱</p>
                     <h2 class="fz80 fw700">SUBSCRIPTION</h2>
@@ -258,72 +268,71 @@
                 <p>你也在追求設計美感與技術落地的完美平衡嗎？作為資深設計師兼工程師，我深知跨領域協作的痛點。訂閱電子報，我將分享如何利用 AI 工具提升產能！</p>
                 <div class="forms-style df jcsb">
                     <input type="text" id="email" name="email" placeholder="電子信箱" class="form-white">
-                    <button type="submit" class="subscription-btn">送出</button>
+                    <button type="submit" class="forms-button-style">送出</button>
                 </div>
             </div>
         </div>
     </section>
     <footer class="contact-bg ptb80">
-        <div class="contact df jcsb gap24">
-            <div class="df fdc jcsb gap24 contact-content">
-                <div class="df fdc gap24">
-                    <header>
-                        <p class="fw700">與我聯絡</p>
-                        <h3 class="fz80 fw700">CONTACT</h3>
-                    </header>
-                    <p>若有數位產品設計和開發相關問題<br>
-                        歡迎填寫表單 或 直接與我聯絡！</p>
-                </div>
-                <div class="df fdc gap24">
-                    <ul class="df gap12">
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    photo_camera
-                                </span>
-                            </a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">
-                                    mark_unread_chat_alt
-                                </span></a></li>
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    person_apron
-                                </span>
-                            </a></li>
-                    </ul>
-                    <div class="df gap8 ">
+        <div class="df container contact fw">
+            <!-- <div class="df fdc jcsb gap24 contact-content"> -->
+            <div class="df fdc gap24 contact-text">
+                <header>
+                    <p class="fw700">與我聯絡</p>
+                    <h3 class="fz80 fw700">CONTACT</h3>
+                </header>
+                <p>若有數位產品設計和開發相關問題<br>
+                    歡迎填寫表單 或 直接與我聯絡！</p>
+            </div>
+            <div class="df fdc gap24 contact-social">
+                <ul class="df gap12">
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                photo_camera
+                            </span>
+                        </a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                                mark_unread_chat_alt
+                            </span></a></li>
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                person_apron
+                            </span>
+                        </a></li>
+                </ul>
+                <div class="df gap8">
 
-                        <span class="material-symbols-outlined">
-                            drafts
-                        </span>
-                        <p>
-                            <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
-                        </p>
-                    </div>
+                    <span class="material-symbols-outlined">
+                        drafts
+                    </span>
+                    <p>
+                        <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
+                    </p>
                 </div>
             </div>
-            <div class="contact-form">
-                <form action="" class="df fdc gap24">
-                    <div class="df jcsb gap24">
-                        <div class="forms-style">
-                            <input type="text" placeholder="姓名" class="">
-                        </div>
-                        <div class="forms-style">
-                            <input type="tel" placeholder="手機號碼">
-                        </div>
+            <!-- </div> -->
+            <form action="" class="df fdc gap24 contact-form">
+                <div class="df jcsb gap24 form-name-phone">
+                    <div class="forms-style">
+                        <input type="text" placeholder="姓名" class="">
                     </div>
-                    <div class="df fdc gap24">
-                        <div class="forms-style">
-                            <input type="email" placeholder="電子信箱">
-                        </div>
-                        <div class="forms-style forms-style-textarea">
-                            <textarea name="" id="" placeholder="備註"></textarea>
-                        </div>
-                        <button type="submit" class="forms-style">送出</button>
+                    <div class="forms-style">
+                        <input type="tel" placeholder="手機號碼">
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="df fdc gap24">
+                    <div class="forms-style">
+                        <input type="email" placeholder="電子信箱">
+                    </div>
+                    <div class="forms-style forms-style-textarea">
+                        <textarea name="" id="" placeholder="備註"></textarea>
+                    </div>
+                    <button type="submit" class="forms-button-style">送出</button>
+                </div>
+            </form>
         </div>
     </footer>
+    <script src="index-m.js"></script>
 </body>
 
 </html>
