@@ -434,10 +434,12 @@ button.forms-style {
 .index-content {
     width: 40%;
     flex-direction: column;
+    position: relative;
 }
 
 .index-image {
     width: 60%;
+    position: relative;
 }
 
 .index-image>img {
@@ -446,6 +448,58 @@ button.forms-style {
 
 .index-btn-group {
     gap: 24px;
+}
+
+/* 首頁第一個區塊的裝飾 */
+.index-decora-1{
+    position: absolute;
+    top: 15%;
+    left: -10%;
+}
+
+.index-decora-2{
+    position: absolute;
+    top: 70%;
+    right: -5%;
+}
+
+.index-decora-3{
+    position: absolute;
+    top: 120px;
+    left: 86px;
+}
+
+.index-decora-4{
+    position: absolute;
+    top: 184px;
+    left: 225px;
+}
+
+.index-decora-5{
+    position: absolute;
+    top: 664px;
+    left: 523px;
+}
+
+/* 手機板的線條 */
+.index-decora-6{
+    /* display: none; */
+    position: absolute;
+
+
+}
+
+.index-decora-7{
+    position: absolute;
+    top: 270px;
+    right: 142px;
+}
+
+.index-decora-8{
+    position: absolute;
+    top: 592px;
+    left: 703px;
+    max-width: 80px;
 }
 
 /* 首頁-service */
@@ -1129,8 +1183,67 @@ hr {
         padding-top: 28px;
         max-width: 100%;
     }
+/* 首頁第一個區塊的裝飾 */
+.index-decora-1{
+    max-width: 80px;
+    position: absolute;
+    top: 15%;
+    left: -10%;
 }
 
+.index-decora-2{
+    max-width: 80px;
+    position: absolute;
+    top: 70%;
+    right: -5%;
+}
+
+.index-decora-3{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 86px;
+}
+
+.index-decora-4{
+    display: none;
+    position: absolute;
+    top: 184px;
+    left: 225px;
+}
+
+.index-decora-5{
+    display: none;
+    position: absolute;
+    top: 664px;
+    left: 523px;
+}
+
+/* 手機板的線條 */
+.index-decora-6{
+    display: block;
+    position: absolute;
+    top: 470px;
+    right: 115px;
+}
+
+.index-decora-7{
+    display: none;
+    position: absolute;
+    top: 270px;
+    right: 142px;
+}
+
+.index-decora-8{
+    position: absolute;
+    top: 474px;
+    right: 34px;
+    left: auto;
+    max-width: 80px;
+}
+
+
+}
 /* -------------------- Navbar -------------------- */
 @media (max-width: 375px) {
 
