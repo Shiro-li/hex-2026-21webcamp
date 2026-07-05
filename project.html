@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +15,24 @@
 </head>
 
 <body>
-    <header>
-        <nav class="df jcsb nvbar fw700">
-            <div><a href="index.html"><img src="img/device-pc.svg" alt=""></a></div>
-            <ul class="df nvbar-list gap24">
+    <header class="nvbar-bg">
+        <nav class="df jcsb nvbar fw700 container">
+            <div class="df jcsb alc">
+                <div>
+                    <a href="index.html"><img src="img/device-pc.svg" alt=""></a>
+                </div>
+                <button class="nvbar-m-menu">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <button class="nvbar-m-close">
+                    <span class="material-symbols-outlined">
+                        close   
+                    </span>
+                </button>
+            </div>
+            <ul class="df nvbar-list gap24 jcsb fw">
                 <li><a href="service.html">服務項目</a></li>
                 <li><a href="project.html">專案作品</a></li>
                 <li><a href="blogs.html">部落格</a></li>
@@ -24,14 +41,14 @@
         </nav>
     </header>
     <section class="project-header-bg">
-        <div class="container header-title">
+        <div class="container header-title mb40">
             <h2 class="fz80 fw700">PROJECTS</h2>
             <p class="fw700 fz48">專案作品</p>
         </div>
     </section>
     <section>
         <div class="container df jcc">
-            <ul class="ptb80 df jcsb project-menu">
+            <ul class="df jcsb project-menu mb40">
                 <li><a href="#" class="menu-black">全部</a></li>
                 <li><a href="#">平面設計</a></li>
                 <li><a href="#">網頁設計</a></li>
@@ -111,64 +128,62 @@
     </section>
 
     <footer class="contact-bg ptb80">
-        <div class="contact df jcsb gap24">
-            <div class="df fdc jcsb gap24 contact-content">
-                <div class="df fdc gap24">
-                    <header>
-                        <p class="fw700">與我聯絡</p>
-                        <h3 class="fz80 fw700">CONTACT</h3>
-                    </header>
-                    <p>若有數位產品設計和開發相關問題<br>
-                        歡迎填寫表單 或 直接與我聯絡！</p>
-                </div>
-                <div class="df fdc gap24">
-                    <ul class="df gap12">
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    photo_camera
-                                </span>
-                            </a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">
-                                    mark_unread_chat_alt
-                                </span></a></li>
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    person_apron
-                                </span>
-                            </a></li>
-                    </ul>
-                    <div class="df gap8 ">
+        <div class="df container contact fw">
+            <!-- <div class="df fdc jcsb gap24 contact-content"> -->
+            <div class="df fdc gap24 contact-text">
+                <header>
+                    <p class="fw700">與我聯絡</p>
+                    <h3 class="fz80 fw700">CONTACT</h3>
+                </header>
+                <p>若有數位產品設計和開發相關問題<br>
+                    歡迎填寫表單 或 直接與我聯絡！</p>
+            </div>
+            <div class="df fdc gap24 contact-social">
+                <ul class="df gap12">
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                photo_camera
+                            </span>
+                        </a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                                mark_unread_chat_alt
+                            </span></a></li>
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                person_apron
+                            </span>
+                        </a></li>
+                </ul>
+                <div class="df gap8">
 
-                        <span class="material-symbols-outlined">
-                            drafts
-                        </span>
-                        <p>
-                            <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
-                        </p>
-                    </div>
+                    <span class="material-symbols-outlined">
+                        drafts
+                    </span>
+                    <p>
+                        <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
+                    </p>
                 </div>
             </div>
-            <div class="contact-form">
-                <form action="" class="df fdc gap24">
-                    <div class="df jcsb gap24">
-                        <div class="forms-style">
-                            <input type="text" placeholder="姓名" class="">
-                        </div>
-                        <div class="forms-style">
-                            <input type="tel" placeholder="手機號碼">
-                        </div>
+            <!-- </div> -->
+            <form action="" class="df fdc gap24 contact-form">
+                <div class="df jcsb gap24 form-name-phone">
+                    <div class="forms-style">
+                        <input type="text" placeholder="姓名" class="">
                     </div>
-                    <div class="df fdc gap24">
-                        <div class="forms-style">
-                            <input type="email" placeholder="電子信箱">
-                        </div>
-                        <div class="forms-style forms-style-textarea">
-                            <textarea name="" id="" placeholder="備註"></textarea>
-                        </div>
-                        <button type="submit" class="forms-style">送出</button>
+                    <div class="forms-style">
+                        <input type="tel" placeholder="手機號碼">
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="df fdc gap24">
+                    <div class="forms-style">
+                        <input type="email" placeholder="電子信箱">
+                    </div>
+                    <div class="forms-style forms-style-textarea">
+                        <textarea name="" id="" placeholder="備註"></textarea>
+                    </div>
+                    <button type="submit" class="forms-button-style">送出</button>
+                </div>
+            </form>
         </div>
     </footer>
     <!-- modal -->
@@ -189,7 +204,7 @@
                     <h2 class="fw700 fz28">品牌視覺與電商整合，多肉植物品牌電商建置</h2>
                     <p>從品牌識別設計到 RWD 網站開發，打造療癒系植栽購物體驗</p>
                 </header>
-                <div class="df jcsb">
+                <div class="df jcsb modal-content-info">
                     <div class="model-content-info-r">我們將大自然的平靜感轉化為數位語彙，透過揉合大地色系與極簡排版，為「PLANTIQUE
                         LIFE」建構出專屬的視覺靈魂。在開發過程中，我們秉持對細節的極致追求，確保從品牌 Logo
                         到每一個組件的轉場，皆展現像素級的精準。</div>
@@ -198,9 +213,10 @@
                             開發方式：Bootstrap、Javascript</p>
                     </div>
                 </div>
+                
             </div>
-            <div class="model-content-bg">
-                <img src="./img/project_modal_pic.png" alt="" class="ptb80">
+            <div class="modal-content-bg">
+                <img src="./img/project_modal_pic.png" alt="" class="img-block container">
             </div>
         </div>
 
