@@ -11,15 +11,29 @@
 
     <link rel="stylesheet" href="all.css">
 
-    <title>當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力</title>
+    <title>Nelson</title>
 </head>
 
 <body>
-    <header>
-        <nav class="df jcsb nvbar fw700">
-            <div><a href="index.html"><img src="img/device-pc.svg" alt=""></a></div>
-            <ul class="df nvbar-list gap24">
-                <li><a href="#">服務項目</a></li>
+    <header class="nvbar-bg">
+        <nav class="df jcsb nvbar fw700 container">
+            <div class="df jcsb alc">
+                <div>
+                    <a href="index.html"><img src="img/device-pc.svg" alt=""></a>
+                </div>
+                <button class="nvbar-m-menu">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <button class="nvbar-m-close">
+                    <span class="material-symbols-outlined">
+                        close   
+                    </span>
+                </button>
+            </div>
+            <ul class="df nvbar-list gap24 jcsb fw">
+                <li><a href="service.html">服務項目</a></li>
                 <li><a href="project.html">專案作品</a></li>
                 <li><a href="blogs.html">部落格</a></li>
                 <li><a href="#">與我聯絡</a></li>
@@ -29,8 +43,8 @@
     <section class="article-giuld-bg">
         <p class="container">首頁 》 部落格 》 部落格標題</p>
     </section>
-    <section class="ptb80 service-container">
-        <article class="article-main">
+    <section class="ptb80 ">
+        <article class="article-main container-small">
             <div class="df jcsb">
                 <p class="">UIUX 設計·前端技術·AI 趨勢應用</p>
                 <p>
@@ -104,7 +118,7 @@
             <p>AI 的崛起並非數位職涯的終點，而是另一個高峰的起點。對於喜歡把美學與程式結合的我們來說，這是一個最好的時代。AI 給了我們更強大的雙翼，讓我們能飛得更高、看見更遠的設計地平線。保持好奇心，持續優化你的
                 Prompt，讓技術為藝術服務，創造出更多令人驚艷的作品。</p>
         </article>
-        <div class="df jcsb alc">
+        <div class="df jcsb alc container-small">
             <p>
                 <span class="material-symbols-outlined">
                     visibility
@@ -128,11 +142,11 @@
     </section>
     <section class="related-blog-bg ptb80">
         <div class="container">
-            <header>
+            <header class="mb40">
                 <p>相關文章</p>
                 <h2 class="fw700 fz80">RELATED BLOG</h2>
             </header>
-            <div class="df jcsb gap24">
+            <div class="df jcsb gap24 blogs-card-related">
                 <article class="index-blogs-card df fdc">
                     <div><img src="./img/blog_2.png" alt="" class="img-block"></div>
                     <p class="">UIUX 設計·設計規範·前端技術</p>
@@ -194,66 +208,65 @@
         </div>
     </section>
     <footer class="contact-bg ptb80">
-        <div class="contact df jcsb gap24">
-            <div class="df fdc jcsb gap24 contact-content">
-                <div class="df fdc gap24">
-                    <header>
-                        <p class="fw700">與我聯絡</p>
-                        <h3 class="fz80 fw700">CONTACT</h3>
-                    </header>
-                    <p>若有數位產品設計和開發相關問題<br>
-                        歡迎填寫表單 或 直接與我聯絡！</p>
-                </div>
-                <div class="df fdc gap24">
-                    <ul class="df gap12">
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    photo_camera
-                                </span>
-                            </a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">
-                                    mark_unread_chat_alt
-                                </span></a></li>
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    person_apron
-                                </span>
-                            </a></li>
-                    </ul>
-                    <div class="df gap8 ">
+        <div class="df container contact fw">
+            <!-- <div class="df fdc jcsb gap24 contact-content"> -->
+            <div class="df fdc gap24 contact-text">
+                <header>
+                    <p class="fw700">與我聯絡</p>
+                    <h3 class="fz80 fw700">CONTACT</h3>
+                </header>
+                <p>若有數位產品設計和開發相關問題<br>
+                    歡迎填寫表單 或 直接與我聯絡！</p>
+            </div>
+            <div class="df fdc gap24 contact-social">
+                <ul class="df gap12">
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                photo_camera
+                            </span>
+                        </a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                                mark_unread_chat_alt
+                            </span></a></li>
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                person_apron
+                            </span>
+                        </a></li>
+                </ul>
+                <div class="df gap8">
 
-                        <span class="material-symbols-outlined">
-                            drafts
-                        </span>
-                        <p>
-                            <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
-                        </p>
-                    </div>
+                    <span class="material-symbols-outlined">
+                        drafts
+                    </span>
+                    <p>
+                        <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
+                    </p>
                 </div>
             </div>
-            <div class="contact-form">
-                <form action="" class="df fdc gap24">
-                    <div class="df jcsb gap24">
-                        <div class="forms-style">
-                            <input type="text" placeholder="姓名" class="">
-                        </div>
-                        <div class="forms-style">
-                            <input type="tel" placeholder="手機號碼">
-                        </div>
+            <!-- </div> -->
+            <form action="" class="df fdc gap24 contact-form">
+                <div class="df jcsb gap24 form-name-phone">
+                    <div class="forms-style">
+                        <input type="text" placeholder="姓名" class="">
                     </div>
-                    <div class="df fdc gap24">
-                        <div class="forms-style">
-                            <input type="email" placeholder="電子信箱">
-                        </div>
-                        <div class="forms-style forms-style-textarea">
-                            <textarea name="" id="" placeholder="備註"></textarea>
-                        </div>
-                        <button type="submit" class="forms-style">送出</button>
+                    <div class="forms-style">
+                        <input type="tel" placeholder="手機號碼">
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="df fdc gap24">
+                    <div class="forms-style">
+                        <input type="email" placeholder="電子信箱">
+                    </div>
+                    <div class="forms-style forms-style-textarea">
+                        <textarea name="" id="" placeholder="備註"></textarea>
+                    </div>
+                    <button type="submit" class="forms-button-style">送出</button>
+                </div>
+            </form>
         </div>
     </footer>
+    <script src="index-m.js"></script>
 </body>
 
 </html>

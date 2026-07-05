@@ -17,11 +17,25 @@
 </head>
 
 <body>
-    <header>
-        <nav class="df jcsb nvbar fw700">
-            <div><a href="index.html"><img src="img/device-pc.svg" alt=""></a></div>
-            <ul class="df nvbar-list gap24">
-                <li><a href="#">服務項目</a></li>
+    <header class="nvbar-bg">
+        <nav class="df jcsb nvbar fw700 container">
+            <div class="df jcsb alc">
+                <div>
+                    <a href="index.html"><img src="img/device-pc.svg" alt=""></a>
+                </div>
+                <button class="nvbar-m-menu">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <button class="nvbar-m-close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <ul class="df nvbar-list gap24 jcsb fw">
+                <li><a href="service.html">服務項目</a></li>
                 <li><a href="project.html">專案作品</a></li>
                 <li><a href="blogs.html">部落格</a></li>
                 <li><a href="#">與我聯絡</a></li>
@@ -34,8 +48,8 @@
             <p class="fw700 fz48">部落格</p>
         </div>
     </section>
-    <section class="blog-post df fdc">
-        <div class="df jcsb ptb80">
+    <section class="blog-post df fdc container ptb80">
+        <div class="df jcsb blog-post-content ">
             <div class="blog-post-list fw700 ">
                 <ul>
                     <li class="active-list"><a href="#">全部</a></li>
@@ -158,20 +172,24 @@
             </ul>
         </div>
         <ul class="df listpages">
-            <li><a href="#">《</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                        keyboard_arrow_left
+                    </span></a></li>
             <li><a href="#" class="listpages-black">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">...</a></li>
             <li><a href="#">20</a></li>
-            <li><a href="#">》</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                        keyboard_arrow_right
+                    </span></a></li>
         </ul>
 
     </section>
     <section class="subscription-bg">
-        <div class="subscription df gap24">
-            <div><img src="./img/subscription.png" alt="" class="img-block"></div>
-            <div class="subscription-info df fdc gap24">
+        <div class="container df gap24 subscription">
+            <img src="./img/subscription.png" alt="" class="img-block">
+            <div class="subscription-info df fdc gap24 ptb80">
                 <header>
                     <p class="fw700">電子報訂閱</p>
                     <h2 class="fz80 fw700">SUBSCRIPTION</h2>
@@ -179,72 +197,71 @@
                 <p>你也在追求設計美感與技術落地的完美平衡嗎？作為資深設計師兼工程師，我深知跨領域協作的痛點。訂閱電子報，我將分享如何利用 AI 工具提升產能！</p>
                 <div class="forms-style df jcsb">
                     <input type="text" id="email" name="email" placeholder="電子信箱" class="form-white">
-                    <button type="submit" class="subscription-btn">送出</button>
+                    <button type="submit" class="forms-button-style">送出</button>
                 </div>
             </div>
         </div>
     </section>
     <footer class="contact-bg ptb80">
-        <div class="contact df jcsb gap24">
-            <div class="df fdc jcsb gap24 contact-content">
-                <div class="df fdc gap24">
-                    <header>
-                        <p class="fw700">與我聯絡</p>
-                        <h3 class="fz80 fw700">CONTACT</h3>
-                    </header>
-                    <p>若有數位產品設計和開發相關問題<br>
-                        歡迎填寫表單 或 直接與我聯絡！</p>
-                </div>
-                <div class="df fdc gap24">
-                    <ul class="df gap12">
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    photo_camera
-                                </span>
-                            </a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">
-                                    mark_unread_chat_alt
-                                </span></a></li>
-                        <li><a href="#">
-                                <span class="material-symbols-outlined">
-                                    person_apron
-                                </span>
-                            </a></li>
-                    </ul>
-                    <div class="df gap8 ">
+        <div class="df container contact fw">
+            <!-- <div class="df fdc jcsb gap24 contact-content"> -->
+            <div class="df fdc gap24 contact-text">
+                <header>
+                    <p class="fw700">與我聯絡</p>
+                    <h3 class="fz80 fw700">CONTACT</h3>
+                </header>
+                <p>若有數位產品設計和開發相關問題<br>
+                    歡迎填寫表單 或 直接與我聯絡！</p>
+            </div>
+            <div class="df fdc gap24 contact-social">
+                <ul class="df gap12">
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                photo_camera
+                            </span>
+                        </a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                                mark_unread_chat_alt
+                            </span></a></li>
+                    <li><a href="#">
+                            <span class="material-symbols-outlined">
+                                person_apron
+                            </span>
+                        </a></li>
+                </ul>
+                <div class="df gap8">
 
-                        <span class="material-symbols-outlined">
-                            drafts
-                        </span>
-                        <p>
-                            <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
-                        </p>
-                    </div>
+                    <span class="material-symbols-outlined">
+                        drafts
+                    </span>
+                    <p>
+                        <a href="mailto:service@hexschool.com">&nbsp;service@hexschool.com</a>
+                    </p>
                 </div>
             </div>
-            <div class="contact-form">
-                <form action="" class="df fdc gap24">
-                    <div class="df jcsb gap24">
-                        <div class="forms-style">
-                            <input type="text" placeholder="姓名" class="">
-                        </div>
-                        <div class="forms-style">
-                            <input type="tel" placeholder="手機號碼">
-                        </div>
+            <!-- </div> -->
+            <form action="" class="df fdc gap24 contact-form">
+                <div class="df jcsb gap24 form-name-phone">
+                    <div class="forms-style">
+                        <input type="text" placeholder="姓名" class="">
                     </div>
-                    <div class="df fdc gap24">
-                        <div class="forms-style">
-                            <input type="email" placeholder="電子信箱">
-                        </div>
-                        <div class="forms-style forms-style-textarea">
-                            <textarea name="" id="" placeholder="備註"></textarea>
-                        </div>
-                        <button type="submit" class="forms-style">送出</button>
+                    <div class="forms-style">
+                        <input type="tel" placeholder="手機號碼">
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="df fdc gap24">
+                    <div class="forms-style">
+                        <input type="email" placeholder="電子信箱">
+                    </div>
+                    <div class="forms-style forms-style-textarea">
+                        <textarea name="" id="" placeholder="備註"></textarea>
+                    </div>
+                    <button type="submit" class="forms-button-style">送出</button>
+                </div>
+            </form>
         </div>
     </footer>
+    <script src="index-m.js"></script>
 </body>
 
 </html>
